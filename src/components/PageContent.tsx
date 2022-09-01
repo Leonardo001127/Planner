@@ -1,13 +1,9 @@
 import React from 'react';
-import { Panel } from 'rsuite';
-import Copyright from '@/components/Copyright';
+import { Panel } from 'rsuite'; 
 
 const PageContent = props => {
-  return (
-    <>
-      <Panel style={{ background: '#fff' }} {...props} />
-      <Copyright />
-    </>
+  return ( 
+      <Panel style={{ background: '#fff' }} {...props} />  
   );
 };
 

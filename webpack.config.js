@@ -16,7 +16,10 @@ module.exports = {
     disableHostCheck: true,
     historyApiFallback: true,
     contentBase: path.resolve(__dirname, ''),
-    publicPath: '/'
+    publicPath: '/',
+    devServer: {
+      contentBase: "./build",
+    },
   },
   output: {
     path: path.resolve(__dirname, 'assets'),
