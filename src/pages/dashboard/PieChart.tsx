@@ -46,6 +46,16 @@ const defaultOptions = {
   legend: {
     position: 'bottom',
     offsetY: 0
+  },
+  theme: {
+    mode: 'dark', 
+    palette: 'palette1', 
+    monochrome: {
+        enabled: false,
+        color: '#fff',
+        shadeTo: 'dark',
+        shadeIntensity: 0.65
+    },
   }
 };
 

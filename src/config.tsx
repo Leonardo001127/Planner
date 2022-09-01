@@ -81,13 +81,5 @@ export const appNavs = [
         to: '/error-500'
       }
     ]
-  },
-
-  {
-    eventKey: 'components',
-    title: 'Components',
-    icon: <CubesIcon />,
-    href: 'https://rsuitejs.com/components/overview/',
-    target: '_blank'
   }
 ];

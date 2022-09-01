@@ -55,7 +55,17 @@ const defaultOptions = {
       show: false
     }
   },
-  colors: ['#fff']
+  colors: ['#fff'],
+  theme: {
+    mode: 'dark', 
+    palette: 'palette1', 
+    monochrome: {
+        enabled: false,
+        color: '#fff',
+        shadeTo: 'dark',
+        shadeIntensity: 0.65
+    },
+  }
 };
 
 const ColorfulChart = ({ className, title, data, type, options }: ColorfulChartProps) => (

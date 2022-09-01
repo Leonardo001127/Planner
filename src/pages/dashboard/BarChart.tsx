@@ -37,7 +37,8 @@ const defaultOptions = {
     animations: {
       enabled: false
     },
-    stacked: true
+    stacked: true,
+    
   },
   plotOptions: {
     bar: {
@@ -77,6 +78,16 @@ const defaultOptions = {
     labels: {
       padding: 4
     }
+  },
+  theme: {
+    mode: 'dark', 
+    palette: 'palette1', 
+    monochrome: {
+        enabled: false,
+        color: '#fff',
+        shadeTo: 'dark',
+        shadeIntensity: 0.65
+    },
   },
   colors: ['#206bc4', '#79a6dc', '#bfe399'],
   legend: {
