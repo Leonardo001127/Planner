@@ -1,10 +1,11 @@
 import React from 'react';
-
 import { Form, Button, Panel, InputGroup, Stack, Checkbox, Divider } from 'rsuite';
 import EyeIcon from '@rsuite/icons/legacy/Eye';
 import EyeSlashIcon from '@rsuite/icons/legacy/EyeSlash';
 import { Link } from 'react-router-dom';
 import Brand from '@/components/Brand';
+import { IconButton } from 'rsuite';
+import ArrowLeftLine from '@rsuite/icons/ArrowLeftLine';
 
 const SignIn = () => {
   const [visible, setVisible] = React.useState(false);
@@ -68,7 +69,10 @@ const SignIn = () => {
 
           <Form.Group>
             <Stack spacing={6}>
-              <Button appearance="primary">Submit</Button>
+            <IconButton appearance="primary" href="/">
+                Logar
+            </IconButton>
+              {/* <Button appearance="primary" >Submit</Button> */}
             </Stack>
           </Form.Group>
         </Form>

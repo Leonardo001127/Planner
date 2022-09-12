@@ -93,14 +93,10 @@ const Header = () => {
 
   return (
     <Stack className="header" spacing={8}>
-      <IconButton
-        icon={<HeartIcon style={{ fontSize: 20 }} color="red" />}
-        href="https://opencollective.com/rsuite"
-        target="_blank"
-      />
+       
       <IconButton
         icon={<GithubIcon style={{ fontSize: 20 }} />}
-        href="https://github.com/rsuite/rsuite-admin-template"
+        href="https://github.com/Leonardo001127/Planner"
         target="_blank"
       />
 
@@ -118,8 +114,8 @@ const Header = () => {
         <Avatar
           size="sm"
           circle
-          src="https://avatars.githubusercontent.com/u/1203827"
-          alt="@simonguo"
+          src="	https://avatars.githubusercontent.com/u/44282296?v=4"
+          alt="@dev"
           style={{ marginLeft: 8 }}
         />
       </Whisper>
