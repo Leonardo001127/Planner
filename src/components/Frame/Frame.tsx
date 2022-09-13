@@ -36,7 +36,7 @@ export interface FrameProps {
 
 const Frame = (props: FrameProps) => {
   const { navs } = props;
-  const [expand, setExpand] = useState(true);
+  const [expand, setExpand] = useState(false);
   const [windowHeight, setWindowHeight] = useState(getHeight(window));
 
   useEffect(() => {

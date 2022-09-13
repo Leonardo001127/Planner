@@ -1,4 +1,29 @@
+.rs-picker-toggle,
+.rs-btn,
+.rs-btn-default,
+.rs-btn-default,
+.rs-picker-toggle-textbox,
+.rs-picker-toggle-read-only,
+.rs-picker-date-menu,
+.rs-input,
+.rs-picker-toggle-active, 
+.rs-picker-default,
+.input-data-custom,
+.rs-picker-input, .rs-picker-default .rs-picker-toggle, 
+.rs-picker-input .rs-picker-toggle,
+.rs-calendar-time-dropdown,
+.rs-calendar-time-dropdown-content,
+.rs-calendar-time-dropdown-column,
+.rs-calendar-time-dropdown-column-title{
+  border-color: #5c5c5c;
+  background-color: #363636 !important;
+  color: #d7d2d2;
+
+}
 .rs-container .fc {
+  --rs-btn-default-bg:'#444';
+  --rs-btn-default-text:'#fff'; 
+  --rs-text-primary:'#fff';
   .fc-button {
     display: inline-block;
     margin-bottom: 0; // For input.btn
@@ -50,11 +75,11 @@
   }
   .fc-col-header-cell-cushion {
     font-weight: 500;
-    color: var(--rs-text-primary);
+    color: #fff;
   }
 
   .fc-daygrid-day-number {
-    color: var(--rs-text-primary);
+    color: #fff;
   }
 
   .fc-scrollgrid {
@@ -63,9 +88,11 @@
   .fc-scrollgrid td,
   .fc-scrollgrid th {
     color: red;
-    border: 1px solid var(--rs-border-secondary);
+    border: 1px solid rgb(87, 87, 87);
   }
-
+  .fc-daygrid-event-harness{
+    margin: 0px 4px 2px 4px;
+  }
   .fc-scrollgrid th {
     height: 36px;
     line-height: 36px;
@@ -76,8 +103,9 @@
   }
   .fc-daygrid-dot-event {
     padding: 4px;
-    background-color: var(--rs-btn-default-bg);
-    color: var(--rs-text-primary);
+    background-color:#bbb;
+    color: rgb(137 137 137 / 62%);
+    border-radius: 10px;
   }
 
   .fc-event-main {
@@ -86,9 +114,12 @@
   .fc-h-event {
     background-color: var(--rs-btn-primary-bg);
     color: var(--rs-btn-primary-text);
-    border-color: var(--rs-btn-primary-bg);
+    border-color: #000;
   }
   .fc-event-title {
     font-weight: 200;
+    color:#585858;
   }
+  
 }
+

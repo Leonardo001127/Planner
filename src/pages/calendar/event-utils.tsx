@@ -12,9 +12,8 @@ console.log(todayStr);
 export const INITIAL_EVENTS: EventInput[] = [
   {
     id: uniqueId(),
-    title: '🎊 Project kick-off meeting',
-    allDay: true,
-    start: format(firstDay, 'yyyy-MM-dd')
+    title: '🎊 Project kick-off meeting', 
+    start: format(firstDay, 'yyyy-MM-dd')+ 'T10:00:00'
   },
   {
     id: uniqueId(),
@@ -92,8 +91,7 @@ export const INITIAL_EVENTS: EventInput[] = [
   },
   {
     id: uniqueId(),
-    title: '🎉 Product release',
-    allDay: true,
+    title: '🎉 Product release', 
     start: format(lastDay, 'yyyy-MM-dd') + 'T14:00:00'
   },
   {
