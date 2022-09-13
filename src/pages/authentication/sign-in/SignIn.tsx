@@ -14,38 +14,40 @@ const SignUp = () => {
       alignItems="center"
       direction="column"
       style={{
-        height: '100vh'
+        height: '100vh',
+        
       }}
+
     >
       <Brand style={{ marginBottom: 10 }} />
 
-      <Panel bordered style={{ background: '#fff', width: 400 }} header={<h3>Sign In</h3>}>
+      <Panel className='shadow-5-strong' style={{ background: '#444', width: 400, }} header={<h3>Login</h3>}>
         <p style={{ marginBottom: 10 }}>
-          <span className="text-muted">New Here? </span>{' '}
-          <Link to="/sign-up"> Create an Account</Link>
+          <span className="text-muted">Novo aqui? </span>{' '}
+          <Link to="/sign-up"> Crie uma conta!</Link>
         </p>
 
         <Form fluid>
           <Form.Group>
-            <Form.ControlLabel>Username or email address</Form.ControlLabel>
+            <Form.ControlLabel>Usuário ou e-mail</Form.ControlLabel>
             <Form.Control name="name" />
           </Form.Group>
           <Form.Group>
             <Form.ControlLabel>
-              <span>Password</span>
-              <a style={{ float: 'right' }}>Forgot password?</a>
+              <span>Senha</span>
+              <a style={{ float: 'right' }}>Esqueceu a senha?</a>
             </Form.ControlLabel>
             <Form.Control name="name" type="password" />
           </Form.Group>
           <Form.Group>
-            <Stack spacing={6} divider={<Divider vertical />}>
-              <Button appearance="primary">Sign in</Button>
+            <Stack spacing={6} justifyContent="center" divider={<Divider vertical />}> 
               <Stack spacing={6}>
                 <IconButton icon={<WechatIcon />} appearance="subtle" />
                 <IconButton icon={<GithubIcon />} appearance="subtle" />
                 <IconButton icon={<FacebookIcon />} appearance="subtle" />
                 <IconButton icon={<GoogleIcon />} appearance="subtle" />
               </Stack>
+              <Button appearance="primary"  href="/dashboard">Login</Button>
             </Stack>
           </Form.Group>
         </Form>

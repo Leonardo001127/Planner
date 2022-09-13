@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom'
 import classNames from 'classnames';
 import { Container, Sidebar, Sidenav, Content, Nav, DOMHelper } from 'rsuite';
 import { Outlet } from 'react-router-dom';
@@ -48,10 +49,12 @@ const Frame = (props: FrameProps) => {
     };
   }, []);
 
+  
+  const urlsWoutSide = ['/sign-up','/sign-in', '/'];
+  const isLoginPage = urlsWoutSide.includes(useLocation().pathname);
   const containerClasses = classNames('page-container', {
-    'container-full': !expand
+    'container-full': !expand || isLoginPage
   });
-
   const navBodyStyle: React.CSSProperties = expand
     ? { height: windowHeight - 112, overflow: 'auto' }
     : {};
@@ -59,14 +62,14 @@ const Frame = (props: FrameProps) => {
   return (
     <Container className="frame">
       <Sidebar
-        style={{ display: 'flex', flexDirection: 'column' }}
-        width={expand ? 260 : 56}
+        style={{ display: isLoginPage? 'none' : 'flex', flexDirection: isLoginPage ? 'unset' : 'column'   }}
+        width={expand && !isLoginPage ? 260 : 56}
         collapsible
       >
         <Sidenav.Header>
           <HeaderLogo expand={expand} />
         </Sidenav.Header>
-        <Sidenav expanded={expand} appearance="subtle" defaultOpenKeys={['2', '3']}>
+        <Sidenav  expanded={expand} appearance="subtle" defaultOpenKeys={['2', '3']}>
           <Sidenav.Body style={navBodyStyle}>
             <Nav>
               {navs.map(item => {
